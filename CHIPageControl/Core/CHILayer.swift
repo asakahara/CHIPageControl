@@ -26,10 +26,10 @@
 
 import QuartzCore
 
-class CHILayer: CAShapeLayer {
+public class CHILayer: CAShapeLayer {
 
 
-    override init() {
+    override public init() {
         super.init()
         self.actions = [
             "bounds": NSNull(),

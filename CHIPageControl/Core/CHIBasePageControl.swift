@@ -188,7 +188,7 @@ import UIKit
         addGestureRecognizer(tapEvent!)
     }
     
-    @objc internal func didTouch(gesture: UITapGestureRecognizer) {}
+    @objc open func didTouch(gesture: UITapGestureRecognizer) {}
     
     func animate() {
         guard let moveToProgress = self.moveToProgress else { return }
@@ -219,11 +219,11 @@ import UIKit
         }
     }
     
-    func updateNumberOfPages(_ count: Int) {
+    open func updateNumberOfPages(_ count: Int) {
         fatalError("Should be implemented in child class")
     }
     
-    func update(for progress: Double) {
+    open func update(for progress: Double) {
         fatalError("Should be implemented in child class")
     }
 
